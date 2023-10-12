@@ -32,8 +32,8 @@ The variable(s) that should be removed from the input data because they are neit
 Compiling, Training, and Evaluating the Model
 Number of neurons, layers, and activation functions selected for the neural network model: 
 3 layers, 
-1st hidden layer - 100
-2nd hidden layer - 90
+1st hidden layer - 100,
+2nd hidden layer - 90,
 3rd  hidden layer - 10
 
 Achieved the target model performance? No
