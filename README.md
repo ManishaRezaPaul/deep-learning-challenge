@@ -25,12 +25,17 @@ In module we look at the nonprofit foundation Alphabet Soup wants a tool that ca
 Overview of the analysis: With the help of machine learning and deep learning, the analysis seeks to select ventures that could result in the best chance of success. 
 Results:
 Data Preprocessing
-The variable(s) are the target(s) for the model:
-The variable(s) are the features for the model:
-The variable(s) that should be removed from the input data because they are neither targets nor features: 
+The variable(s) are the target(s) for the model: Columns used for targets - Columns used for targets -> 'APPLICATION_TYPE',	'AFFILIATION', 'CLASSIFICATION',	'USE_CASE', 'ORGANIZATION',	'STATUS',	'INCOME_AMT',	'SPECIAL_CONSIDERATIONS',	'ASK_AMT'
+The variable(s) are the features for the model: Column used for features -> 'IS SUCCESSFUL'
+The variable(s) that should be removed from the input data because they are neither targets nor features: Id columns - 'Name' and 'EIN'
 
 Compiling, Training, and Evaluating the Model
-Number of neurons, layers, and activation functions selected for the neural network model:
-Achieved the target model performance?
-Steps taken to increase model performance:
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+Number of neurons, layers, and activation functions selected for the neural network model: 
+3 layers, 
+1st hidden layer - 100
+2nd hidden layer - 90
+3rd  hidden layer - 10
+
+Achieved the target model performance? No
+Steps taken to increase model performance: Tested by adding and reducing layers and neurons, increased the number of bins and tested on binning different columns. Additionally, increased the number of epochs and batch size. 
+Summary: This model aims to improve accuracy however it does not reach the targeted 75% acuracy. Therefore models such as random forest should be tested to see if the accuracy can be increased.
